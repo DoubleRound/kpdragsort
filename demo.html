@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>kpdragsort - demo</title>
+
+    <link type="text/css" rel="stylesheet" href="css/demo.css"/>
+
+    <!-- 先引入jQuery -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+
+    <!-- 再引入扩展插件 -->
+    <script type="text/javascript" src="js/kpdragsort.js"></script>
+
+</head>
+<body>
+<div class="link_cont" id="link_cont_id">
+    <ul class="cont a"></ul>
+    <ul class="cont b"></ul>
+    <ul class="cont c"></ul>
+    <ul class="cont d"></ul>
+    <ul class="cont e"></ul>
+</div>
+
+<!-- 调用一定要在列表加载完成之后 -->
+<script type="text/javascript">
+    $("#link_cont_id").kpdragsort();
+</script>
+
+</body>
+</html>

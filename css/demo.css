@@ -1,0 +1,35 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.link_cont {
+    width: 600px;
+    float: left;
+    margin-left: 100px;
+}
+
+.cont {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.a {
+    background-color: black;
+}
+
+.b {
+    background-color: crimson;
+}
+
+.c {
+    background-color: deeppink;
+}
+
+.d {
+    background-color: blueviolet;
+}
+
+.e {
+    background-color: blue;
+}

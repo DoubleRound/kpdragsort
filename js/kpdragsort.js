@@ -1,7 +1,7 @@
 /**
  * 页面div拖动排序
  *
- * @author 田伟松
+ * @author Wilson Tan
  *
  * @since 2014-04-16
  *
@@ -101,7 +101,7 @@ $.fn.kpdragsort = function(options) {
                 wid.replaceWith(_this);
                 window.kp_only = null;
 
-                // 完成之后调用回调函数
+                // 拖动结束调用回调函数
                 if (options && typeof options.onEnd == "function")
                     options.onEnd(this);
 

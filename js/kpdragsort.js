@@ -102,8 +102,8 @@ $.fn.kpdragsort = function(options) {
                 window.kp_only = null;
 
                 // 完成之后调用回调函数
-                if (options && typeof options.finish == "function")
-                    options.finish();
+                if (options && typeof options.onEnd == "function")
+                    options.onEnd(this);
 
             });
 

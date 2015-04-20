@@ -14,8 +14,8 @@ $(list).kpdragsort();
 ```js
 $(list).kpdragsort({
     // 拖动结束
-    onEnd : function(/**Event*/evt) {
-
+    onEnd : function(obj) {
+        // obj当前拖动的对象
     }
 });
 ```

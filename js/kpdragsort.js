@@ -32,7 +32,12 @@ $.fn.kpdragsort = function(options) {
         // 添加虚线框
         _this.before('<div id="kp_widget_holder"></div>');
         var wid = $("#kp_widget_holder");
-        wid.css({"border": "2px dashed #ccc", "height": _this.outerHeight(true) - 4});
+        wid.css({
+            "box-sizing": "border-box",
+            "border": "2px dashed #ccc",
+            "height": _this.outerHeight(true) - 4,
+            "margin": _this.css("margin")
+        });
 
         // 保持原来的宽高
         _this.css({

@@ -32,7 +32,18 @@ $.fn.kpdragsort = function(options) {
         // 添加虚线框
         _this.before('<div id="kp_widget_holder"></div>');
         var wid = $("#kp_widget_holder");
-        wid.css({"border": "2px dashed #ccc", "height": _this.outerHeight(true) - 4});
+        
+        var marginTop = _this.css("margin-top") || "0";
+        var marginLeft = _this.css("margin-left") || "0";
+        var marginRight = _this.css("margin-right") || "0";
+        var marginBottom = _this.css("margin-bottom") || "0";
+        
+        wid.css({
+            "box-sizing": "border-box",
+            "border": "2px dashed #ccc",
+            "height": _this.outerHeight(true) - 4,
+            "margin": [marginTop, marginRight, marginBottom, marginLeft].join(" ")
+        });
 
         // 保持原来的宽高
         _this.css({
